@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-TwitterUnfollowAlertScheduler.Worker-28CC4680-990B-4E11-95F5-CB8338C68E3A</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="twitter-unfollow-alert-worker.Service" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.12" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Systemd" Version="3.1.12" />
+    <PackageReference Include="TweetinviAPI" Version="5.0.4" />
+  </ItemGroup>
+</Project>
